@@ -70,27 +70,27 @@ Die fertige Textur enthält je nach Vorgabe unter anderem Schatten, Emission, Um
 Beim Modelling gilt in erster Linie, die Meshes klein zu halten und wenige Faces zu verwenden.
 Man muss also einen Kompromiss zwischen Detailgrad und Performance eingehen. Glücklicherweise gibt es Normalmaps, um detaillierte Meshes enorm zu reduzieren, ohne viele Details zu verlieren.
 
-<img src="png/cube_normal_wire.png" width="35%">
-<img src="png/cube_normal_rendered.png" width="35%">
+<img src="img/cube_normal_wire.png" width="35%">
+<img src="img/cube_normal_rendered.png" width="35%">
 
 Optimieren lassen sich Meshes vorallem, wenn man dem Vorsatz des Quadmodellings folgt und N-Gons vermeidet. Ein guter erster Schritt ist beispielsweise das Reduzieren von Schleifen, die zum Beispiel durch einen Multiresolution-Modifier entstanden, jedoch nicht formgebend sind.
 Enthält das Mesh N-Gons oder Tris, die von den Quadbahnen ablenken, verlaufen Edgeloops meist über das ganze Mesh und es ist nicht möglich, sie zu entfernen ohne der Form des Objekts zu schaden.
 
-<img src="png/cylinder_loops_mesh.png" width="35%">
-<img src="png/cylinder_loops_rendered.png" width="35%">
+<img src="img/cylinder_loops_mesh.png" width="35%">
+<img src="img/cylinder_loops_rendered.png" width="35%">
 
 Mithilfe von Insets lassen sich viele Schleifen vermeiden, ohne Einbuße in der Form des Meshes zu haben.
 
-<img src="png/loopcut_inset_comparison.png" width="50%">
+<img src="img/loopcut_inset_comparison.png" width="50%">
 
 Zuletzt gibt es den Ansatz, Meshes voneinander zu lösen, wenn man auf diese Weise maßgeblich Scheitelpunkte einsparen kann.
 Beispielsweise kann man die Beine eines Tisches als seperate Meshes im gleichen Objekt modellieren. Die Texturfläche, die auf der Tischunterseite durch die Beine verdeckt wird, würde vermutlich keine andere Verwendung finden und der Gewinn ist, dass die ohnehin flache Ebene keine unnötigen Unterteilungen hat.
 
-<img src="png/inset_loose_comparison.png" width="50%">
+<img src="img/inset_loose_comparison.png" width="50%">
 
 Ist das Mesh in den finalen Zügen, kann man die Quadstruktur brechen und Scheitelpunkte vereinen, um unnötige Faces zu vermeiden.
 
-<img src="png/merge_verticies.png" width="50%">
+<img src="img/merge_verticies.png" width="50%">
 
 Die Herangehensweisen beim Modellieren eines Objektes sind natürlich fallabhängig und nicht immer ist es der richtige Weg,
 ausschließlich die Face Zahl zu reduzieren. Wendet man zum Beispiel einen Subdivision Modifier an, ist dieser möglicherweise
@@ -103,9 +103,9 @@ Für die Erstellung von detaillierten Meshes wie einer Sandsteinmauer bieten sic
 auf ein Mesh anwenden. Ist das Mesh hochaufgelöst genug, kommen die Details zur Geltung. Um eine gleichmäßige Unterteilung zu erzielen, sollte
 das Mesh in seiner Grundform eine Quadstruktur mit einigermaßen quadratischen Quads besitzen.
 
-<img src="png/wall_basic.png" width="30%">
-<img src="png/wall_subdivided.png" width="30%">
-<img src="png/wall_subdivided_height.png" width="30%">
+<img src="img/wall_basic.png" width="30%">
+<img src="img/wall_subdivided.png" width="30%">
+<img src="img/wall_subdivided_height.png" width="30%">
 
 Mithilfe des Subdivision-Modifiers lässt sich das Mesh schrittweise feiner aufbauen. Hat man einen gewünschten Detailgrad erreicht, kann man
 sowohl den Subdivision- als auch den Displacementmodifier anwenden. Die [LODs](#lods) des Objektes lassen sich erstellen, indem man mit dem Decimatemodifier
@@ -129,7 +129,7 @@ Zum Erstellen eines LODs können beispielsweise Elemente eines Objektes in die T
 | <b>Stufe</b> | <b>LOD 7</b> | <b>LOD 5</b> | <b>LOD 3</b> | <b>LOD 1</b> |
 | --- | --- | --- | --- | --- |
 | <b>Verticies</b> |76672 | 19168 | 4792 | 1198 |
-| <b>Bild</b> | <img src="png/heightmap_lod7_76672.png"> | <img src="png/heightmap_lod5_19168.png"> | <img src="png/heightmap_lod3_4792.png"> | <img src="png/heightmap_lod1_1198.png"> |
+| <b>Bild</b> | <img src="img/heightmap_lod7_76672.png"> | <img src="img/heightmap_lod5_19168.png"> | <img src="img/heightmap_lod3_4792.png"> | <img src="img/heightmap_lod1_1198.png"> |
 
 
 <a name="uvmapping"></a>
@@ -142,9 +142,9 @@ Im Bezug zu den oben genannten Schattenberechnungen gibt es noch zu beachten:
 Berechnet man den Schatten und andere Lichteinwirkungen in Blender als Baking und speichtert diese in eine Textur, braucht das Objekt selbst ein gleichmäßiges und nicht überlappendes UV-Mapping. Das gilt auch, wenn das Objekt selbst beispielsweise ein einfarbiges lowpoly Objekt ist und keine Texturen hat, schließlich muss die berechnete Information in der Textur dem Objekt irgendwie zugeordnet werden können.
 Zudem braucht beispielsweise jeder Stuhl an einem Tisch eine eigene Textur, wenn dieser Lichtinformationen enthalten soll, da die Beleuchtung von der Position des Stuhles abhängt.
 
-<img src="png/chair_uv_layout.png" width="30%">
-<img src="png/chair_preview.png" width="30%">
-<img src="png/chair_uv_map.png" width="30%">
+<img src="img/chair_uv_layout.png" width="30%">
+<img src="img/chair_preview.png" width="30%">
+<img src="img/chair_uv_map.png" width="30%">
 
 <a name="baking"></a>
 ## Baking
