@@ -1,4 +1,4 @@
-# Baking Textures In PolyVR
+# Baking Textures For PolyVR
 
 Baking light information into a texture is useful if you want to represent light information that is not provided by the engine at runtime. A more detailled overview on how to create a baked PolyVR scene can be found in this [guide](GUIDE.md).
 
