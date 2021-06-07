@@ -7,21 +7,21 @@ Bitte beachtet, dass ich dieses Tutorial nach meinem Wissensstand und zur aktuel
 Hier befinden sich die Szene dieses Tutorials ohne und mit Berücksichtigung der Lichtinformationen im Vergleich.
 Diese Informationen sollen in die Textur eingefangen und in PolyVR verfügbar gemacht werden.
 
-<img src="png/baking_tutorial_mat_setup.png" width="48%">
-<img src="png/baking_tutorial_renderprev_02.png" width="48%">
+<img src="img/baking_tutorial_mat_setup.png" width="48%">
+<img src="img/baking_tutorial_renderprev_02.png" width="48%">
 
 ## Szene
 
 Der erste Schritt dieses Tutorials ist eine Szene. Wichtig ist, dass jedes Objekt über eine UV-Map verfügt. Zur besseren Darstellung der Lichtverhältnisse habe ich einen Raum mit einer offenen Wand und Decke gewählt und in den Raum drei Suzannes platziert. 
 
-<img src="png/baking_tutorial_scene_setup.png" width="48%">
+<img src="img/baking_tutorial_scene_setup.png" width="48%">
 
 ## Materialien und Texturen
 
 Den Objekten in der Szene habe ich nahtlose Holztexturen zugewiesen. Zwei der Suzannes leuchten in rot und grün, um zur Veranschauung mehr Lichtinformationen in der Szene zu haben. Ob die Texturen generiert, getiled oder gemapped sind ist für das Baken der Lichtinformationen irrelevant, das finale Ergebnis wird jedoch gemapped sein. Entsprechend sollten für gute Ergebnisse größere Texturen verwendet werden.
 Wichtig ist zudem, dass jedes Objekt, auf dem sich am Ende Lichtinformationen befinden soll, (die Suzannes mit Emission sind also ausgenommen) eine UV-Map besitzt. 
 
-<img src="png/baking_tutorial_mat_setup.png" width="48%">
+<img src="img/baking_tutorial_mat_setup.png" width="48%">
 
 ## Vorbereitung
 
@@ -38,10 +38,10 @@ Ist die Bilddatei für alle zu berechnenden Materialien (in unserem Beispiel nur
 
 Drückt man nun auf Bake, dauert der Prozess je nach Komplexität der Szene mehrere Minuten bis Stunden. Zeit für einen Kaffee :)
 
-<img src="png/baking_tutorial_unbaked_suzanne.png" width="48%">
-<img src="png/baking_tutorial_baked_suzanne.png" width="48%">
-<img src="png/baking_tutorial_unbaked_walls.png" width="48%">
-<img src="png/baking_tutorial_baked_walls.png" width="48%">
+<img src="img/baking_tutorial_unbaked_suzanne.png" width="48%">
+<img src="img/baking_tutorial_baked_suzanne.png" width="48%">
+<img src="img/baking_tutorial_unbaked_walls.png" width="48%">
+<img src="img/baking_tutorial_baked_walls.png" width="48%">
 
 ## Materialsetup
 
@@ -49,7 +49,7 @@ Sind die fertigen Texturen erstellt, ist wichtig, diese abzuspeichern. Texturen 
 
 Durch klicken auf verschiedene [Output Nodes](https://docs.blender.org/manual/en/2.79/render/cycles/nodes/types/output/material.html?highlight=material%20output%20node) wechselt man zwischen den unterschiedlichen Shader Pfaden.
 
-<img src="png/baking_tutorial_mats_final.png" width="48%">
+<img src="img/baking_tutorial_mats_final.png" width="48%">
 
 ## Export
 
