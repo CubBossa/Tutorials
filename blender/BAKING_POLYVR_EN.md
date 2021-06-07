@@ -6,14 +6,14 @@ In the following images you can see the comparison of the tutorial scene with an
 
 (All images can bee viewed in original size by right clicking them and opening them in a new tab)
 
-<img src="png/baking_tutorial_mat_setup.png" width="48%">
-<img src="png/baking_tutorial_renderprev_02.png" width="48%">
+<img src="img/baking_tutorial_mat_setup.png" width="48%">
+<img src="img/baking_tutorial_renderprev_02.png" width="48%">
 
 ## Scene
 
 The first step of this tutorial is a scene. It is important that each object has its own UV map. For a better representation of the light conditions i chose a room with an open wall and ceiling and placed three Suzannes in it.
 
-<img src="png/baking_tutorial_scene_setup.png" width="48%">
+<img src="img/baking_tutorial_scene_setup.png" width="48%">
 
 ## Materials and Textures
 
@@ -21,7 +21,7 @@ I assigned a seamless wood texture to the objects in the scene. Two Suzannes emi
 It is also important that every object that is supposed to have mapped light information has its own UV map and no overlapping areas. An unwrapped object with a mirror modifier for example will also mirror the light information.
 One exception to this rule would be the emitting suzannes. A shadow cannot be cast to an object with emission shaders which makes them irrelevant for direct light baking.
 
-<img src="png/baking_tutorial_mat_setup.png" width="48%">
+<img src="img/baking_tutorial_mat_setup.png" width="48%">
 
 ## Preparations
 
@@ -37,10 +37,10 @@ If the image file is selected for all materials to be baked (in our case just th
 
 The baking can be started by pressing "Bake" will take several minutes up to hours, depending on the complexity of the scene. Time for a coffee :)
 
-<img src="png/baking_tutorial_unbaked_suzanne.png" width="48%">
-<img src="png/baking_tutorial_baked_suzanne.png" width="48%">
-<img src="png/baking_tutorial_unbaked_walls.png" width="48%">
-<img src="png/baking_tutorial_baked_walls.png" width="48%">
+<img src="img/baking_tutorial_unbaked_suzanne.png" width="48%">
+<img src="img/baking_tutorial_baked_suzanne.png" width="48%">
+<img src="img/baking_tutorial_unbaked_walls.png" width="48%">
+<img src="img/baking_tutorial_baked_walls.png" width="48%">
 
 ## Material Setup
 
@@ -48,7 +48,7 @@ If the final textures have been baked, it is important to [save them manually](h
 
 By clicking on the different [Output Nodes](https://docs.blender.org/manual/en/2.79/render/cycles/nodes/types/output/material.html?highlight=material%20output%20node) you can switch between the shader paths.
 
-<img src="png/baking_tutorial_mats_final.png" width="48%">
+<img src="img/baking_tutorial_mats_final.png" width="48%">
 
 ## Export
 
