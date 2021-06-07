@@ -4,11 +4,11 @@ This Repository contains a collection of different tutorials made by me. Feel fr
 
 ## Contents
 
-# English
+### English
 
 - [Baking Textures In PolyVR](blender/BAKING_POLYVR_EN.md)
 
-# German
+### German
 
 - [Baking von Texturen für PolyVR](blender/BAKING_POLYVR_DE.md)
 - [Guide zum Erstellen optimierter Gameassets](blender/GUIDE_GAME_ASSETS.md)
